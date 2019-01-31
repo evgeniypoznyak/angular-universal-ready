@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+  { path: 'home', loadChildren: './home/home.module#HomeModule'}
+];
 
 @NgModule({
   imports: [
